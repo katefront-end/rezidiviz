@@ -1,0 +1,11 @@
+.press {
+  background: #FFF;
+}
+.press__title {
+  color: #003331;
+  font-family: #se;
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 38px; /* 140.741% */
+  letter-spacing: 1.2px;
+}

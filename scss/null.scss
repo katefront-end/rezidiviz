@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+ul,li{
+    list-style: none;
+}
+
+body{
+    font-family: $main-font;
+    font-weight: 400;
+    font-size: 13px;
+    color: #014C48;
+}
+
+button{
+    background-color: transparent;
+    padding: 0;
+    border: 0;
+}
+
+.body{
+    min-width: 320px;
+    min-height: 100%;
+}
+
+.page{
+    min-width: 100%;
+    overflow: hidden;
+}
+
+html{
+    scroll-behavior: smooth;
+}

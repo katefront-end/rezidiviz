@@ -1,0 +1,74 @@
+.brends{
+    padding-top: 24px;
+    padding-bottom: 21px;
+
+    &__link{    
+        color: rgba(53, 83, 98, 0.80);
+        font-family: $main-font;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 160%; /* 24/15 */
+        position: relative;
+        padding-left: 32px;
+
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    &__item{
+        grid-column: 2 span;
+        padding-top: 16px;
+        border-top: 1px solid  rgba(53, 83, 98, 0.30);;
+
+     }
+
+     &__ted{
+        
+        &::before{
+            content: url(../img/brends/IMAGE.svg);
+        }
+     }
+
+     &__the{
+
+        &::before{
+            content: url(../img/brends/IMAGE-2.svg);
+        }
+     }
+
+     &__state{
+
+        &::before{
+            content: url(../img/brends/IMAGE-3.svg);
+        }
+     }
+
+
+    &__asso{
+
+        &::before{
+            content: url(../img/brends/IMAGE-4.svg);
+        }
+    }
+
+    &__time{
+
+        &::before{
+            content: url(../img/brends/IMAGE-5.svg);
+        }
+    }
+
+    &__free{
+
+        &::before{
+            content: url(../img/brends/IMAGE-6.svg);
+        }
+    }
+    
+}

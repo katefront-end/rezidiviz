@@ -1,0 +1,120 @@
+.work{
+    background: #001F1F;
+    padding-top: clamp(60px, 12.10vw, 155px);
+    padding-bottom: clamp(60px, 10.39vw, 133px);
+
+    &__title{
+        color: #FAFAFA;
+        font-family: $second-font;
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 144.444444%; /* 52/36 */
+        letter-spacing: 1.2px;
+        margin-bottom: 43px;
+    }
+
+    &__text{
+        color: #FAFAFA;
+        font-family: $main-font;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 155.555556%; /* 28/18 */
+        margin-bottom: 37px;
+    }
+
+
+    &__link{
+        color: #FFF;
+        text-align: center;
+        font-family: $main-font;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 142.857143%; /* 20/14 */
+        letter-spacing: 0.02px;
+        grid-column: 2 span;
+        border-radius: 80px;
+        background: #00665F;
+        padding: 16px 32px;
+
+        &:hover{
+            background-color: rgb(3, 3, 34);
+        }
+    }
+
+    &__content{
+        grid-column: 4 span;
+    }
+
+    &__picture{
+        grid-column: 7/5 span;
+    }
+
+    &__picture{
+        
+        img{
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+}
+
+
+@media (max-width:850px) {
+    .work__content{
+        grid-column: 4 span;
+    }
+    .work__picture{
+        grid-column: 4 span;
+        
+        img{
+            max-width: 300px;
+            margin: 0 auto;
+        }
+    }
+
+    .work__row{
+        text-align: center;
+        gap: 30px;
+    }
+}
+
+@media (max-width:620px) {
+    .work__picture{
+        
+        img{
+            max-width: 270px;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (max-width:420px) {
+    .work__title{
+        font-size: 30px;
+    }
+
+    .work__text{
+        font-size: 12px;
+    }
+
+    .work__link{
+        font-size: 11px;
+    }
+}
+
+@media (max-width:520px) {
+    .work__text{
+        font-size: 15px;
+    }
+
+    .work__title{
+        font-size: 30px;
+    }
+
+    .work__link{
+        padding: 10px 30px;
+    }
+}
+

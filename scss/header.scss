@@ -1,0 +1,123 @@
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 17px 0;
+    z-index: 1000;
+
+    transition: all .4s linear;
+
+    &__row{
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__link{
+        color: #FFF;
+        font-family: $main-font;
+        font-size: 13px;
+        font-weight: 400;  
+        line-height: 123.076923%; /* 16/13 */
+        
+        &:hover{
+            color: rgb(9, 132, 91);
+        }
+    }
+
+    &__nav{
+        gap: 0 32px;
+        align-items: center;
+        padding-right: 20px;
+    }
+
+    &__list{
+        gap: 0 51px;
+        align-items: center;
+    }
+
+    @media (max-width:768px) {
+        .header__nav{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 60%;
+            background-color: #2d3d46;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            align-items: flex-start;
+            padding: 30px;
+            gap: 20px;
+            transform: translateX(-100%);
+            transition: all .3s linear;
+        }
+
+        .header__nav.header__show{
+            transform: translateX(0%);
+        }
+
+        .header__link{
+            font-size: 24px;
+            transform: translateX(-200%);
+            transition: all .5s linear;
+        }
+
+
+        .header__nav.header__show .header__link{
+            transform: translateX(0%);
+        }
+
+        .header__list{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        .navToggle{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+    }
+
+    &-fixed{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+
+        background-color: rgba(#000, .8);
+
+        transition: all .4s linear;
+    }
+
+}
+
+
+.navToggle.toggle span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+.navToggle.toggle span:nth-child(2) {
+    opacity: 0;
+}
+.navToggle.toggle span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+
+.navToggle{
+    display: none;
+    height: 18px;
+}
+
+.navToggle span{
+    display: inline-block;
+    width: 35px;
+    height: 1px;
+    background-color: #FFF;
+    transition: transform 0.4s, opacity 0.4s;
+    /* сделаем плавный переход */
+}

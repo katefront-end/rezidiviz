@@ -1,0 +1,20 @@
+.bottom {
+  background: #000F0F;
+  padding: 45px 0 63px;
+}
+.bottom__row {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.bottom__link {
+  color: #E5ECEC;
+  font-family: Public Sans;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 10px; /* 100% */
+}

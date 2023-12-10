@@ -1,0 +1,64 @@
+.project{
+   padding-top: clamp(60px, 9.375vw, 120px);
+   padding-bottom: clamp(60px, 11.01vw, 141px);
+
+    &__title{
+        color: #003331;
+        font-family: $second-font;
+        font-size: clamp(20px, 2.34vw, 30px);
+        font-weight: 400;
+        line-height: 126.666667%; /* 38/30 */
+        letter-spacing: 1.2px;
+        max-width: 598px;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 57px;
+    }
+
+    &__text{
+        color: rgba(53, 83, 98, 0.80);
+        font-family: $main-font;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 160%; /* 24/15 */
+        width: 120px;
+    }
+
+    &__row{
+        max-width: 758px;
+        margin: 0 auto;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__img{
+        margin-bottom: 20px;
+    }
+
+    &__item{
+        text-align: center;
+    }
+
+
+}
+
+@media (max-width:768px) {
+    .project__item{
+        width: 100%;
+    }
+
+    .project__text{
+        width: 100%;
+    }
+
+    .project__row{
+        gap: 20px;
+    }
+}
+
+@media (max-width:520px) {
+    .project__row{
+        gap: 30px;
+    }
+
+}
